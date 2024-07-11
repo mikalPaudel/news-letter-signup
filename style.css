@@ -1,0 +1,136 @@
+:root {
+  --DarkSlateGrey: hsl(234, 29%, 20%);
+  --CharcoalGrey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  --Tomato: hsl(4, 100%, 67%);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: var(--DarkSlateGrey);
+  background-color: var(--CharcoalGrey);
+}
+
+.main {
+  background-color: var(--DarkSlateGrey);
+  /* padding: 40px; */
+  min-height:100vh;
+}
+
+.container {
+  /* padding: 80px; */
+  background-color: var(--White);
+  border-radius: 30px;
+  width: 870px;
+
+}
+
+.box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  /* align-text: center; */
+}
+@media (max-width: 768px) {
+  .box{
+    display: flex;
+    flex-direction: column-reverse;
+    /* align-items: center; */
+    /* justify-content:center; */
+    padding: 0%;
+    margin: 0%;
+    
+  }
+.container{
+  padding: 0%;
+}
+  .col-md-6 picture,
+  .col-md-6 img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+h1{
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-wrap: nowrap;
+}
+h6{
+  font-size: 1.1rem;
+  font-weight: 600;
+
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 5px;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+ul{
+  list-style-type: none;
+  padding: auto;
+  list-style-image: url('./assets/images/icon-list.svg');
+}
+
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  margin-top: 20px;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  background-color: hsl(235, 18%, 26%);
+}
+button:hover {
+  background-color: hsl(4, 100%, 67%);
+  transition: all 1s;
+}
+
+.hide{
+  display: none;
+}
+
+.success {
+  background-color: var(--Tomato);
+  color: var(--White);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
